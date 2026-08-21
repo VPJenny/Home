@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="rainCanvas"></canvas>
+
+    <header class="header">
+        <!-- DOWNLOAD POPUP -->
+        <div class="download-overlay" id="downloadPopup">
+            <div class="download-modal">
+                <div class="download-modal-header">
+                    <h2>DOWNLOAD</h2>
+                    <button class="download-close" id="downloadClose">
+                        &times;
+                    </button>
+                </div>
+
+                <!-- 918KISS -->
+                <div class="download-item">
+                    <img src="assets/images/918kiss.png" alt="918KISS">
+                    <div class="download-info">
+                        <h3>918KISS</h3>
+                        <div class="download-links">
+                            <a href="https://b1.918kiss.com/" target="_blank">
+                                Link Android
+                            </a>
+                            <a href="https://github.com/DisneyOn/Menu/releases/download/918kiss-v1.0/918kiss.apk"
+                                target="_blank">
+                                APK Android
+                            </a>
+                            <a href="https://b1.918kiss.com/" target="_blank">
+                                iOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEGA888 -->
+                <div class="download-item">
+                    <img src="assets/images/mega888.png" alt="MEGA888">
+                    <div class="download-info">
+                        <h3>MEGA888</h3>
+                        <div class="download-links">
+                            <a href="https://m.mega566.com/mega/index.html" target="_blank">
+                                Link Android
+                            </a>
+                            <a href="https://github.com/DisneyOn/Menu/releases/download/Mega888-v0.1/Mega888.apk"
+                                target="_blank">
+                                APK Android
+                            </a>
+                            <a href="https://m.mega566.com/mega/index.html" target="_blank">
+                                iOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PUSSY888 -->
+                <div class="download-item">
+                    <img src="assets/images/pussy888.png" alt="PUSSY888">
+                    <div class="download-info">
+                        <h3>PUSSY888</h3>
+                        <div class="download-links">
+                            <a href="https://md.pussy888.com/" target="_blank">
+                                Link Android
+                            </a>
+                            <a href="https://md.pussy888.com/" target="_blank">
+                                iOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEWTOWN -->
+                <div class="download-item">
+                    <img src="assets/images/newtown.png" alt="NEWTOWN">
+                    <div class="download-info">
+                        <h3>NEWTOWN</h3>
+                        <div class="download-links">
+                            <a href="https://m.newmax11.com/index.html" target="_blank">
+                                Link Android
+                            </a>
+
+                            <a href="https://www.newmax11.com/" target="_blank">
+                                iOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- RULES POPUP -->
+        <div class="rules-overlay" id="rulesPopup">
+            <div class="rules-modal">
+                <div class="rules-modal-header">
+                    <h2>⚠️ RULES CLAIM BONUS ⚠️</h2>
+                    <button type="button" class="rules-close" id="rulesClose">
+                        ×
+                    </button>
+                </div>
+                <div class="rules-content">
+                    <div class="rule-item">
+                        <span class="rule-icon">📍</span>
+                        <span><strong>Slot Game Only</strong></span>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-icon">📍</span>
+                        <span><strong>Cuci Turnover X2</strong></span>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-icon">📍</span>
+                        <span><strong>Banned Live/Table Game/OceanKing</strong></span>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-icon">📍</span>
+                        <span>
+                            <strong>
+                                Break The Rules, Tak Dapat Cuci, Point Akan Di Tolak Habis
+                                ( Kembali Modal Semula Sahaja )
+                            </strong>
+                        </span>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-icon">📍</span>
+                        <span>
+                            <strong>
+                                No Bonus Live/Table Game/OceanKing Cuci Turnover X2
+                            </strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JOIN POPUP -->
+        <div class="join-overlay" id="joinPopup">
+            <div class="join-modal">
+                <div class="join-modal-header">
+                    <h2>JOIN VP ONLINE</h2>
+                    <button type="button" class="join-close" id="joinClose">
+                        ×
+                    </button>
+                </div>
+                <div class="join-content">
+                    <p class="join-subtitle">
+                        Hubungi kami melalui platform berikut
+                    </p>
+                    <a href="https://wa.me/601169733944" target="_blank" rel="noopener noreferrer"
+                        class="join-contact whatsapp">
+                        <span class="join-contact-icon">
+                            WhatsApp
+                        </span>
+                        <span class="join-contact-info">
+                            <strong>WhatsApp 1</strong>
+                            <small>
+                                +60 116 973 3944
+                            </small>
+                        </span>
+                        <span class="join-arrow">
+                            →
+                        </span>
+                    </a>
+                    <a href="https://wa.me/60128992288" target="_blank" rel="noopener noreferrer"
+                        class="join-contact whatsapp">
+                        <span class="join-contact-icon">
+                            WhatsApp
+                        </span>
+                        <span class="join-contact-info">
+                            <strong>WhatsApp 2</strong>
+                            <small>
+                                +60 128 992 288
+                            </small>
+                        </span>
+                        <span class="join-arrow">
+                            →
+                        </span>
+                    </a>
+                    <a href="https://wa.me/601123283627" target="_blank" rel="noopener noreferrer"
+                        class="join-contact whatsapp">
+                        <span class="join-contact-icon">
+                            WhatsApp
+                        </span>
+                        <span class="join-contact-info">
+                            <strong>WhatsApp 3</strong>
+                            <small>
+                                +60 112 328 3627
+                            </small>
+                        </span>
+                        <span class="join-arrow">
+                            →
+                        </span>
+                    </a>
+                    <a href="https://t.me/Vpjenny" target="_blank" rel="noopener noreferrer"
+                        class="join-contact telegram">
+                        <span class="join-contact-icon">
+                            Telegram
+                        </span>
+                        <span class="join-contact-info">
+                            <strong>Telegram</strong>
+                            <small>
+                                @Vpjenny
+                            </small>
+                        </span>
+                        <span class="join-arrow">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container">
+            <div class="logo">
+                VP Online
+            </div>
+            <nav class="nav">
+                <a href="#" id="downloadBtn">Download</a>
+                <a href="#" id="rulesBtn">RULES</a>
+                <a href="#" id="joinBtn">JOIN</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="assets/images/NewJOIN.png" alt="Bonus Member Baru">
+            </div>
+            <div class="hero-slide">
+                <img src="assets/images/RecomenKAWAN.png" alt="Recomen Kawan">
+            </div>
+            <div class="hero-slide">
+                <img src="assets/images/DailyBONUS.png" alt="Daily Bonus">
+            </div>
+            <div class="hero-dots">
+                <button class="hero-dot active" data-slide="0">
+                </button>
+                <button class="hero-dot" data-slide="1">
+                </button>
+                <button class="hero-dot" data-slide="2">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR TRACK -->
+    <section class="popular-track">
+        <div class="popular-track-container">
+            <div class="section-title">
+                <span class="section-title-line"></span>
+                <h2>POPULAR GAMES</h2>
+                <span class="section-title-line"></span>
+            </div>
+            <div class="track-carousel">
+                <div class="track-track">
+                    <div class="track-item">
+                        <img src="assets/images/mega888.png" alt="MEGA888">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/pussy888.png" alt="PUSSY888">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/918kiss.png" alt="918KISS">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/newtown.png" alt="NEWTOWN">
+                    </div>
+
+                    <div class="track-item">
+                        <img src="assets/images/mega888.png" alt="MEGA888">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/pussy888.png" alt="PUSSY888">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/918kiss.png" alt="918KISS">
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/images/NEWTOWN.png" alt="NEWTOWN">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY VP ONLINE -->
+    <section class="why-vp">
+        <div class="why-vp-container">
+            <div class="section-title">
+                <span class="section-title-line"></span>
+                <h2>WHY VP ONLINE</h2>
+                <span class="section-title-line"></span>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        ⚡
+                    </div>
+                    <h3>FAST</h3>
+                    <p>
+                        Fast and smooth experience
+                        anytime you play.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" class="why-svg" aria-hidden="true">
+                            <path d="M12 2L20 5V11C20 16.5 16.5 20.5 12 22C7.5 20.5 4 16.5 4 11V5L12 2Z" />
+                            <path d="M8 12L10.5 14.5L16 9" />
+                        </svg>
+                    </div>
+                    <h3>SECURE</h3>
+                    <p>
+                        Your account and information
+                        are protected.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        🎁
+                    </div>
+                    <h3>BONUS</h3>
+                    <p>
+                        Enjoy exciting bonuses
+                        and exclusive rewards.
+                    </p>
+                </div>
+                <!-- TRUSTED -->
+                <div class="why-card">
+                    <div class="why-icon">
+                        👑
+                    </div>
+                    <h3>TRUSTED</h3>
+                    <p>
+                        Reliable platform trusted
+                        by our members.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/scripy.js"></script>
+
+    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=ezv5zDlaYsML">
+    </script>
+</body>
+
+</html>
